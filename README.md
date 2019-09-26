@@ -53,3 +53,5 @@ mvn install:install-file -DgroupId=com.aliyun.alicom -DartifactId=alicom-mns-rec
     }
 }
 ```
+
+### 线上数据库可能网络不稳定建议同步结构和数据到本地(navicat/dbeaver都可以)

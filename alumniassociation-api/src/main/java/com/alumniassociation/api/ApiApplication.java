@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(scanBasePackages = "com.alumniassociation.api.controller")
 // mapper 接口类扫描包配置
-@MapperScan({"com.alumniassociation.*.dao", "com.alumniassociation.*.*.dao", "com.alumniassociation.*.resitory"})
+@MapperScan({"com.alumniassociation.*.dao", "com.alumniassociation.*.*.dao", "com.alumniassociation.*.repository"})
 @ComponentScan("com.alumniassociation.*.service")
 @ComponentScan("com.alumniassociation.*.*.service")
 @ComponentScan("com.alumniassociation.api")
