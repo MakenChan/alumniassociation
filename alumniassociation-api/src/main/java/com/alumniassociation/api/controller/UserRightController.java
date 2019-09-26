@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alumniassociation.user.entity.UserRight;
-import com.alumniassociation.user.resitory.UserRightResitory;
+import com.alumniassociation.user.repository.UserRightRepository;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -30,7 +30,7 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/szxyh/userright")
 public class UserRightController {
 	@Autowired
-	private UserRightResitory userRightResitory;
+	private UserRightRepository userRightResitory;
 
 	@ApiOperation(value = "取得所有用户权限", notes = "展示所有用户权限")
 	@GetMapping(value = "/listAllProJurisdiction")

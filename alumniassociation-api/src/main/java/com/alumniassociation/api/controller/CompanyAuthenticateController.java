@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alumniassociation.authentication.entity.CompanyAuthenticate;
-import com.alumniassociation.authentication.resitory.CompanyAuthenticateResitory;
+import com.alumniassociation.authentication.repository.CompanyAuthenticateRepository;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -36,7 +36,7 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/szxyh/companyAuthenticate")
 public class CompanyAuthenticateController {
 	@Autowired
-	private CompanyAuthenticateResitory companyAuthenticateResitory;
+	private CompanyAuthenticateRepository companyAuthenticateResitory;
 
 	@InitBinder
 	protected void init(HttpServletRequest request, ServletRequestDataBinder binder) {

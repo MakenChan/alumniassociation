@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alumniassociation.operation.entity.OperationRecord;
-import com.alumniassociation.operation.resitory.OperationRecordResitory;
+import com.alumniassociation.operation.repository.OperationRecordRepository;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -33,7 +33,7 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/szxyh/operationRecord")
 public class OperationRecordController {
 	@Autowired
-	private OperationRecordResitory operationRecordResitory;
+	private OperationRecordRepository operationRecordResitory;
 
 	@InitBinder
 	protected void init(HttpServletRequest request, ServletRequestDataBinder binder) {

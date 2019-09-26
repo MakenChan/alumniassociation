@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alumniassociation.operation.entity.ProJurisdiction;
-import com.alumniassociation.operation.resitory.ProJurisdictionResitory;
+import com.alumniassociation.operation.repository.ProJurisdictionRepository;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -30,7 +30,7 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/szxyh/projurisdiction")
 public class ProJurisdictionController {
 	@Autowired
-	private ProJurisdictionResitory proJurisdictionResitory;
+	private ProJurisdictionRepository proJurisdictionResitory;
 
 	@ApiOperation(value = "取得所有项目权限", notes = "展示所有项目权限")
 	@GetMapping(value = "/listAllProJurisdiction")
