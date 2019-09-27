@@ -17,7 +17,7 @@ mvn install:install-file -DgroupId=com.aliyun.alicom -DartifactId=alicom-mns-rec
 ### 为了方便后端快速开发和测试，增加鉴权mock类
 > 使用方法 打开配置文件中的 mock.open=true 既可以
 
-### 打开登录模拟后，使用postman等接口测试工具进行接口测试
+### 打开鉴权mock后，使用postman等接口测试工具进行接口测试
 > 模拟登录后返回数据,拿到token，放入要测试接口的请求头部，X-Alumniassociation-Token=[这里放token，括号不要]
 ```$xslt
 {
@@ -55,3 +55,5 @@ mvn install:install-file -DgroupId=com.aliyun.alicom -DartifactId=alicom-mns-rec
 ```
 
 ### 线上数据库可能网络不稳定建议同步结构和数据到本地(navicat/dbeaver都可以)
+
+### 建议按功能点提交代码，便于追溯
